@@ -7,10 +7,10 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Twisted Reviews</name>
+    <name>PhoneGap Example</name>
 
     <description>
-        For a twisted sense of humour.
+        An example for phonegap build docs. 
     </description>
 
     <author href="https://build.phonegap.com" email="support@phonegap.com">
