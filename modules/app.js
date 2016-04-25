@@ -1,7 +1,7 @@
 (function(){
-  var troutPro = angular.module('troutPro', ['ngRoute']);
+  var troutPro = angular.module('troutPro', ['ngRoute', 'angular-gestures']);
 
-    troutPro.config(function($routeProvider) {
+    troutPro.config(function($routeProvider, hammerDefaultOptsProvider) {
         $routeProvider
 
             // route for the home page
@@ -20,6 +20,10 @@
             .when('/contact', {
                 templateUrl : 'pages/contact.html',
                 controller  : 'contactController'
+            });
+            hammerDefaultOptsProvider.set({
+                recognizers: [[Hammer.Swipe, {time: 500}]],
+                touchAction: 'pan-y'
             });
     });
 
