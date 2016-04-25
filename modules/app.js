@@ -56,7 +56,7 @@
         
         success(function(data, status, headers, config){
           $(data).each(function(key, val){
-            var markup = '<div class="sort">' + data[key]['field_possible_answers'] + '<div class="col-sm-3 list-item"><div class="node-photo"><div data-quickedit-field-id="node/18/field_photo/en/full" class="field field--name-field-photo field--type-image field--label-hidden field__item">' + data[key]['field_photo'] + '</div></div><h4 class="node-title" data-nid="' + data[key]['nid'] + '">' + data[key]['title'] + '</h4></div></div>';
+            var markup = '<div class="sort">' + data[key]['field_possible_answers'] + '<div class="col-sm-3 list-item"><div class="node-photo"><div data-quickedit-field-id="node/18/field_photo/en/full" class="field field--name-field-photo field--type-image field--label-hidden field__item"><img src="' + data[key]['field_photo'] + '"></div></div><h4 class="node-title" data-nid="' + data[key]['nid'] + '">' + data[key]['title'] + '</h4></div></div>';
             var parent = $(markup);
             var divs = parent.children();
             while (divs.length) {
