@@ -1,0 +1,73 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.list-item img {
+    width: auto;
+    height: auto;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.list-item {
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  background-color: #f3a035;
+  padding: 10px;
+  border-bottom: 5px solid #70c41f;
+  margin-bottom: 15px;
+}
+
+header img {
+  height: 55px;
+}
+
+.quote {
+    width: 92%;
+    font-size: 6vw;
+    text-align: center;
+    background-color: #70c41f;
+    color: #fff;
+    margin: 0 4%;
+    padding: 15px;
+}
+
+.instructions {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 6vw;
+    color: #2c682f;
+}
+
+.node-photo {
+  margin-top: 15px;
+}
+
+.node-title {
+  font-size: 8vw;
+  color: #2c682f;
+}
+
+.btn {
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 90%;
+    font-size: 7vw;
+}
+
+.btn-primary {
+  background-color: #70c41f;
+  border: medium none;
+}
+
+.btn-secondary {
+  background-color: #f3a035;
+  color: #fff;
+}

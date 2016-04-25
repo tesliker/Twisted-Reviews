@@ -1,0 +1,23 @@
+<!-- about.html -->
+<div class="streams-list-bg">
+</div>
+<div class="clearfix streams-list-body">
+    <header>
+        <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><i class="fa fa-chevron-left"></i> Home</a></li>
+                 <!-- <li><a href="#">Search by zip code<i class="fa fa-chevron-right"></i></a></li> -->
+              </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <div class="clearfix streams-list-wrapper" ng-repeat="node in nodes">
+      <div class="streams-list" ng-repeat="(key, val) in node">
+        <div class="col-xs-8">{{ val.title }}</div>
+        <div class="col-xs-4">{{ val.Distance }}</div>
+      </div>
+    </div>
+</div>

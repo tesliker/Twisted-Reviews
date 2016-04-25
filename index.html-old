@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="store">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="modules/app.js"></script>
+	<div ng-controller="StoreController">
+    <form>
+        <input type="text" name="firstName" ng-model="location.latitude"> Latitude <br/>
+        <input type="text" name="lastName"  ng-model="location.longitude"> Longitude <br/>
+        <input type="text" name="lastName"  ng-model="location.miles"> Miles Away <br/>
+        <input type="button" value="Submit Form" ng-click="location.submitForm()">
+    </form>
+	  <div ng-repeat="node in nodes">
+      <h1 ng-repeat="(key, val) in node">
+        {{ val.title }}
+      <h1>
+      <div class="col-sm-4">
+        {{ val.image.src }}
+      </div>
+      <div class="col-sm-8">
+      
+      </div>
+    </div>
+    <div class="description">
+    </div>
+	</div>
+	
+  </body>
+</html>
